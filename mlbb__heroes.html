@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Tuned</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: black; /* Black text for "Stay Tuned" */
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Stay Tuned Text */
+        .stay-tuned {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            animation: pulse 2s infinite ease-in-out; /* Pulse animation */
+            z-index: 1; /* Ensure text is above the waves */
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Back Button */
+        .btn {
+            position: absolute; /* Position the button */
+            bottom: 20px; /* Move button to the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: black;
+            background: rgb(241, 102, 102); /* Semi-transparent orange */
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            z-index: 1; /* Ensure button is above the waves */
+        }
+
+        .btn:hover {
+            background: rgba(255, 153, 0, 0.8); /* Semi-transparent yellow on hover */
+        }
+
+        /* Waves Background */
+        .waves {
+            position: fixed; /* Fixed position to keep it in place */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1; /* Send it to the background */
+            background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+            animation: waveAnimation 6s infinite alternate ease-in-out, colorShift 12s infinite alternate ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes colorShift {
+            0% {
+                background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+            }
+            25% {
+                background: linear-gradient(45deg, rgba(0, 150, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
+            }
+            50% {
+                background: linear-gradient(45deg, rgba(255, 100, 0, 0.3), rgba(0, 255, 150, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 100, 255, 0.3));
+            }
+            75% {
+                background: linear-gradient(45deg, rgba(0, 255, 200, 0.3), rgba(255, 0, 100, 0.3), rgba(255, 200, 0, 0.3), rgba(0, 150, 255, 0.3));
+            }
+            100% {
+                background: linear-gradient(45deg, rgba(200, 0, 255, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stay-tuned">Stay Tuned</div>
+    <a href="MONDE.html" class="btn">Back to Home</a>
+    <div class="waves"></div>
+</body>
+</html>

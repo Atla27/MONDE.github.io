@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" type="image/png" href="images/faicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="monde.css"/>
+    <script src="monde.js"></script>
+    <title>Monde | Home</title>
+  </head>
+
+  <body>
+    <div class="waves"></div>
+  <i class="fa fa-arrow-up" aria-hidden="true" onclick = "scrollToTop();"></i>
+    <section class="sec1" id="section1">
+      <div class="menuBar">
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#blog">Blogs</a></li> 
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Skill</a></li>
+          <li><a href="#section4">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navBar">
+        <div class="logo">
+          <h1>MONDE</h1>
+        </div>
+        <div class="navBar__menu">
+          <ul>
+            <li>
+              <a href="#section1"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="#blog"><b>Blogs</b></a> 
+            </li>
+            <li>
+              <a href="#section2"><b>About</b></a>
+            </li>
+            <li>
+              <a href="#section3"><b>Profiles</b></a>
+            </li>
+            <li>
+              <a href="#section4"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>        
+
+        <div class="sec1__menuIcon"></div>
+      </div>
+      <div class="sec1__container">
+        <div class="sec1__content">
+          <div class="sec1__contentDetail">
+            <div class="sec1__contentHider">
+              <h1>Hi,</h1>
+            </div>
+            <div class="sec1__contentHider">
+              <h1><span>Welcome</span></h1>
+            </div>
+            <div class="sec1__contentHider">
+              <h1></h1>
+            </div>
+          </div>
+          <a>MONDE WebPage</a>
+        </div>
+        <div class="sec1__imgContainer">
+          <div class="sec1__imgBx">
+            <img src="images/logo_white.png" alt="Logo" loading="lazy"></img>
+            <span class="sec1__design1"></span>
+            <span class="sec1__design2"></span>
+            <span class="sec1__design3"></span>
+            <span class="sec1__design4"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec0" class="sec0">
+      <div class="sec0__heading">
+        <h6>JOIN THE MONDE COMMUNITY</h6>
+        <h2>Your ultimate Mobile Legends hub</h2>
+      </div>
+      
+      <div class="sec0__content">
+        <div class="sec0__text">
+          <p>MONDE is your go-to destination for everything Mobile Legends: Bang Bang. 
+          Dive into the latest news, participate in thrilling tournaments, and find your perfect team. 
+          Our comprehensive guides will sharpen your skills, while our vibrant forums and live streams 
+          keep you connected with fellow gamers. Based in a passionate gaming community, we bring you 
+          the best merchandise and resources to elevate your gameplay. Join us and be part of the MONDE experience!</p>
+          <button onclick="window.location.href='mlbb__heroes.html'">Explore Heroes</button>
+        </div>
+        <div class="sec0__image">
+          <img src="images/mlbb_banner.jpg" alt="MLBB Banner">
+        </div>
+      </div>
+    </section>
+    
+    <style>
+     
+      @keyframes fadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      .sec0 {
+        margin-top: 10%;
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: black;
+        font-size: 2rem;
+        padding: 20px;
+        text-align: center;
+        animation: fadeUp 1s ease-out; 
+      }
+    
+      
+      .sec0__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px; 
+        max-width: 80%;
+      }
+    
+     
+      .sec0__text {
+        flex: 1;
+        max-width: 50%;
+        text-align: left; 
+      }
+    
+      .sec0__text p {
+        font-size: 1.5rem;
+      }
+    
+      .sec0__text button {
+        background: rgb(241, 102, 102);
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    
+      .sec0__text button:hover {
+        background: rgb(6, 215, 198);
+      }
+    
+     
+      .sec0__image {
+        flex: 1;
+        max-width: 50%;
+      }
+    
+      .sec0__image img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    
+
+      @media (max-width: 768px) {
+        .sec0__content {
+          flex-direction: column;
+          text-align: center;
+        }
+    
+        .sec0__image,
+        .sec0__text {
+          max-width: 100%;
+        }
+    
+        .sec0__text {
+          text-align: center;
+        }
+      }
+    </style>
+    
+    <section id="sec5" class="sec5">
+      <div class="sec5__heading">
+        <h6>GAME ESSENTIALS</h6>
+        <h3>Unlock your full potential in Mobile Legends!</h3>
+      </div>
+      
+      <div class="sec5__content">
+        <div class="sec5__item">
+          <img src="images/unlock.jpg" alt="Ultimate Guide">
+          <div class="sec5__text">
+            <h3>Ultimate Guide to Mobile Legends</h3>
+            <h4>Master Mobile Legends with our definitive gameplay guide!</h4>
+          </div>
+        </div>
+        <div class="sec5__item">
+          <img src="images/live.jpg" alt="Live Streaming">
+          <div class="sec5__text">
+            <h3>Live Streaming Events</h3>
+            <h4>Catch all the live action in Mobile Legends!</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .sec5 {
+        margin-top: 10%;
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: black;
+        font-size: 2rem;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 10%;
+        animation: fadeUp 1s ease-out 0.5s; 
+      }
+    
+      .sec5__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 80%;
+      }
+    
+      .sec5__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+      }
+    
+      .sec5__item img {
+        width: 40%;
+        border-radius: 10px;
+      }
+    
+      .sec5__text {
+        width: 60%;
+      }
+    
+      @media (max-width: 768px) {
+        .sec5__item {
+          flex-direction: column;
+          text-align: center;
+        }
+    
+        .sec5__item img {
+          width: 100%;
+        }
+    
+        .sec5__text {
+          width: 100%;
+        }
+      }
+    </style>
+
+<section class="blog" id="blog">
+  <h1 class="blog__title">Latest Blogs</h1>
+  <div class="blog__container">
+    <!-- Blog Card 1 -->
+    <a href="blog-post-1.html" class="blog__card-link">
+      <article class="blog__card" data-aos="fade-up">
+        <div class="blog__image-container">
+          <img src="images/blog1.jpg" alt="Hero Guides" class="blog__image" />
+          <div class="blog__overlay">
+            <span class="blog__read-more">Read More</span>
+          </div>
+        </div>
+        <div class="blog__content">
+          <h2 class="blog__heading">Hero Guides</h2>
+          <p class="blog__text">Discover the most powerful heroes dominating the battlefield this season...</p>
+          <div class="blog__meta">
+            <span class="blog__date">March 15, 2025</span>
+            <span class="blog__author">By gian</span>
+          </div>
+        </div>
+      </article>
+    </a>
+
+    <!-- Blog Card 2 -->
+    <a href="blog-post-2.html" class="blog__card-link">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog__image-container">
+          <img src="images/blog2.jpg" alt="Best Strategies for Ranked Matches" class="blog__image" />
+          <div class="blog__overlay">
+            <span class="blog__read-more">Read More</span>
+          </div>
+        </div>
+        <div class="blog__content">
+          <h2 class="blog__heading">Best Strategies for Ranked Matches</h2>
+          <p class="blog__text">Climbing the ranks? Here are the best tactics to secure victory and improve your gameplay...</p>
+          <div class="blog__meta">
+            <span class="blog__date">March 15, 2025</span>
+            <span class="blog__author">By Kenjie</span>
+          </div>
+        </div>
+      </article>
+    </a>
+
+    <!-- Blog Card 3 -->
+    <a href="blog-post-3.html" class="blog__card-link">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="400">
+        <div class="blog__image-container">
+          <img src="images/blog3.jpg" alt="Upcoming MLBB Events & Tournaments" class="blog__image" />
+          <div class="blog__overlay">
+            <span class="blog__read-more">Read More</span>
+          </div>
+        </div>
+        <div class="blog__content">
+          <h2 class="blog__heading">Upcoming MLBB Events & Tournaments</h2>
+          <p class="blog__text">Stay updated on the biggest events and tournaments happening in Mobile Legends...</p>
+          <div class="blog__meta">
+            <span class="blog__date">March 13, 2025</span>
+            <span class="blog__author">By Jeremy</span>
+          </div>
+        </div>
+      </article>
+    </a>
+
+    <!-- Blog Card 4 -->
+    <a href="blog-post-4.html" class="blog__card-link">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="600">
+        <div class="blog__image-container">
+          <img src="images/blog4.jpg" alt="How to Build the Perfect Team Composition" class="blog__image" />
+          <div class="blog__overlay">
+            <span class="blog__read-more">Read More</span>
+          </div>
+        </div>
+        <div class="blog__content">
+          <h2 class="blog__heading">How to Build the Perfect Team Composition</h2>
+          <p class="blog__text">Learn how to create a balanced team with the right mix of roles and heroes...</p>
+          <div class="blog__meta">
+            <span class="blog__date">March 15, 2025</span>
+            <span class="blog__author">By Eiderf</span>
+          </div>
+        </div>
+      </article>
+    </a>
+
+    <!-- Blog Card 5 -->
+    <a href="blog-post-5.html" class="blog__card-link">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="800">
+        <div class="blog__image-container">
+          <img src="images/blog5.jpg" alt="Top Tips for New Mobile Legends Players" class="blog__image" />
+          <div class="blog__overlay">
+            <span class="blog__read-more">Read More</span>
+          </div>
+        </div>
+        <div class="blog__content">
+          <h2 class="blog__heading">Top Tips for New Mobile Legends Players</h2>
+          <p class="blog__text">New to MLBB? Here are some essential tips to help you get started and improve quickly...</p>
+          <div class="blog__meta">
+            <span class="blog__date">March 15, 2025</span>
+            <span class="blog__author">By Jerry</span>
+          </div>
+        </div>
+      </article>
+    </a>
+  </div>
+</section>
+
+<style>
+.blog__card-link {
+  text-decoration: none; 
+  color: inherit; 
+  display: block;
+  width: 100%; 
+  max-width: 350px; 
+  margin: 0 auto; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.blog__card-link:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.blog {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.blog__title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.blog__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog__card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+}
+
+.blog__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog__image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog__card:hover .blog__image {
+  transform: scale(1.1);
+}
+
+.blog__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog__card:hover .blog__overlay {
+  opacity: 1;
+}
+
+.blog__read-more {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem; 
+  padding: 15px 30px; 
+  border: 2px solid white;
+  border-radius: 5px;
+  transition:  0.3s ease, color 0.3s ease;
+  display: inline-block; 
+}
+
+.blog__read-more:hover {
+  background: white;
+  color: #007BFF;
+}
+
+.blog__content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog__heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog__text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.blog__meta {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.blog__date,
+.blog__author {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__card {
+    max-width: 100%;
+  }
+}
+</style>
+
+    
+    <section class="sec2" id="section2">
+      <div class="sec2__heading">
+        <h2>About Us</h2>
+      </div>
+      <div class="sec2__container">
+        <div class="sec2__aboutme1" data-aos="fade-up" data-aos-offset="-90">
+          <div class="sec2__aboutme1Img">
+            <img src=images/logo_white.png alt="Logo" />
+          </div>
+          <h2></h2>
+          <div class="sec2__aboutme1Social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/jerrysungduan.2007.23.02/"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec2__aboutme2" data-aos="fade-up" data-aos-delay="1000">
+          <p class="custom-paragraph">
+            Building the future of MLBB esports with a strong, skilled, and
+        </p>
+        </div>
+      </div>
+      <h1>Welcome to Monde</h1>
+    <p><h2>Click the button below to learn more about us.</h2></p> 
+    <button onclick="redirectToAbout()" style="
+    background-color: #ec0753; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: 0.3s ease-in-out; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);"
+    
+    onmouseover="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.05)';"
+    onmouseout="this.style.backgroundColor='##ec0753'; this.style.transform='scale(1)';"
+    onmousedown="this.style.backgroundColor='#00408a'; this.style.transform='scale(0.98)';"
+    onmouseup="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.05)';">
+    
+    Learn More
+</button>
+
+<script>
+    function redirectToAbout() {
+        window.location.href = 'about.html';
+    }
+</script>
+    </section>
+
+    <section class="sec3" id="section3">
+    <h1>PROFILES</h1>
+    <div class="sec3__container">
+        <button class="sec3__card" data-aos="fade-up" onclick="showBio('eiderf')">
+            <div class="sec3__box">
+                <div class="sec3__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <img src="images/Eiderf.png" alt="Eiderfs's Profile Picture">
+                    </div>
+                </div>
+                <h2 class="sec3__text">BIO-DATA</h2>
+                <h2 class="sec3__text">EIDERF</h2>
+            </div>
+        </button>
+        <button class="sec3__card" data-aos="fade-up" data-aos-delay="500" onclick="showBio('kenjie')">
+            <div class="sec3__box">
+                <div class="sec3__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <img src="images/Ken.png" alt="Kenjie's Profile Picture">
+                    </div>
+                </div>
+                <h2 class="sec3__text">BIO-DATA</h2>
+                <h2 class="sec3__text">KENJIE</h2>
+            </div>
+        </button>
+        <button class="sec3__card" data-aos="fade-up" data-aos-delay="500" onclick="showBio('jerry')">
+            <div class="sec3__box">
+                <div class="sec3__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <img src="images/Jer.png" alt="Jerry's Profile Picture">
+                    </div>
+                </div>
+                <h2 class="sec3__text">BIO-DATA</h2>
+                <h2 class="sec3__text">JERRY</h2>
+            </div>
+        </button>
+        <button class="sec3__card" data-aos="fade-up" data-aos-delay="500" onclick="showBio('gian')">
+            <div class="sec3__box">
+                <div class="sec3__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <img src="images/Gian.png" alt="Gian's Profile Picture">
+                    </div>
+                </div>
+                <h2 class="sec3__text">BIO-DATA</h2>
+                <h2 class="sec3__text">GIAN</h2>
+            </div>
+        </button>
+        <button class="sec3__card" data-aos="fade-up" data-aos-delay="500" onclick="showBio('jeremy')">
+            <div class="sec3__box">
+                <div class="sec3__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <img src="images/Jeremy.png" alt="Jeremy's Profile Picture">
+                    </div>
+                </div>
+                <h2 class="sec3__text">BIO-DATA</h2>
+                <h2 class="sec3__text">JEREMY</h2>
+            </div>
+            <style>
+              .number {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                border-radius: 50%;
+              }
+
+              .number img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              }
+            </style>
+        </button>
+    </div>
+</section>
+
+<script>
+  function showBio(person) {
+    window.location.href = `bio.html?person=${person}`;
+  }
+</script>
+    
+    <section class="sec4" id="section4">
+      <div class="sec4__container">
+        <div class="sec4__box1">
+          <div class="sec4__content1" data-aos="fade-right">
+            <h2>MONDE</h2>
+            <p>
+              Welcome
+            </p>
+          </div>
+          <div
+            class="sec4__content2"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="sec4__content2Icon">
+              <i class="fas fa-phone-alt"></i>
+              <h2>+63234-455-5456</h2>
+            </div>
+            <div class="sec4__content2Icon">
+              <i class="fas fa-envelope"></i>
+              <h2>monde123@gmail.com</h2>
+            </div>
+          </div>
+          <div
+            class="sec4__content3"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/jerrysungduan.2007.23.02/"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec4__box2" data-aos="fade-in" data-aos-delay="500">
+          <h2>Quick links</h2>
+          <div class="sec4__links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Profiles</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec4__box3">
+          <h2>Contact Us</h2>
+          <form>
+            <input
+              data-aos="fade-left"
+              data-aos-delay="500"
+              class="sec4__email"
+              type="email"
+              placeholder="Enter your Email"
+            />
+            <input
+              class="sec4__message"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              type="text"
+              placeholder="enter the feedback or suggestion"
+            />
+            <button type="submit">send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+      tl.from(".navBar", { y: "-10rem", duration: 1 });
+      tl.from(".navBar .navBar__menu ul li", {
+        y: "-2rem",
+        opacity: 0,
+        duration: 1,
+        stagger: 0.25,
+      });
+      tl.to(
+        ".sec1__content .sec1__contentDetail h1",
+        { y: "0rem", duration: 1, stagger: 0.25 },
+        "=-1"
+      );
+      tl.from(".sec1__imgBx img", { opacity: 0, x: "50%", duration: 1.5 });
+      tl.from(
+        ".sec1__imgBx .sec1__design1",
+        { opacity: 0, x: "3rem", duration: 1.5 },
+        "=-1"
+      );
+      tl.from(
+        ".sec1__imgBx .sec1__design2",
+        { opacity: 0, x: "-3rem", duration: 1.5 },
+        "=-1"
+      );
+      tl.from(
+        ".sec1__design3",
+        { opacity: 0, x: "-30%", duration: 1.5 },
+        "=-2"
+      );
+      tl.from(".sec1__design4", { opacity: 0, duration: 1.5 }, "=-2");
+      tl.from(".sec1__content a", { opacity: 0, duration: 1.5 }, "=-3");
+    </script>
+    <!-- our AOs will occur here -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset:0,
+      });
+    </script>
+    <script>
+      var sec1__menuIcon = document.querySelector(".sec1__menuIcon");
+      var menuBar = document.querySelector(".menuBar");
+      sec1__menuIcon.addEventListener("click", function () {
+        sec1__menuIcon.classList.toggle("active");
+        menuBar.classList.toggle("active");
+      });
+    </script>
+    <script type = "text/javascript">
+        window.addEventListener('scroll',function(){
+            var scroll = document.querySelector('.fa');
+            scroll.classList.toggle("active",window.scrollY>500)
+        })
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior:'smooth'
+            })
+        }
+    </script>
+    <script src="monde.js"></script>
+    </head>
+  </body>

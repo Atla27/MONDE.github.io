@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Monde</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: black; /* Black text for contrast */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: auto; /* Enable scrolling */
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            backdrop-filter: blur(10px); /* Adds a blur effect to blend with the background */
+            position: relative; /* Ensure it stays above the background */
+            z-index: 1; /* Ensure it stays above the background */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff9900; /* Orange for emphasis */
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #ff6600; /* Darker orange for emphasis */
+            margin-top: 20px;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black; /* Black text */
+        }
+
+        /* Button Styling */
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            font-size: 18px;
+            color: white;
+            background: rgba(255, 102, 0, 0.8); /* Semi-transparent orange */
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: rgba(255, 153, 0, 0.8); /* Semi-transparent yellow on hover */
+        }
+
+        /* Background Animation */
+        .waves {
+            position: fixed; /* Fixed position to keep it in place */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1; /* Send it to the background */
+            background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+            animation: waveAnimation 6s infinite alternate ease-in-out, colorShift 12s infinite alternate ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes colorShift {
+            0% {
+                background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+            }
+            25% {
+                background: linear-gradient(45deg, rgba(0, 150, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
+            }
+            50% {
+                background: linear-gradient(45deg, rgba(255, 100, 0, 0.3), rgba(0, 255, 150, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 100, 255, 0.3));
+            }
+            75% {
+                background: linear-gradient(45deg, rgba(0, 255, 200, 0.3), rgba(255, 0, 100, 0.3), rgba(255, 200, 0, 0.3), rgba(0, 150, 255, 0.3));
+            }
+            100% {
+                background: linear-gradient(45deg, rgba(200, 0, 255, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+
+        <h2>Objective</h2>
+        <p>Monde strives to foster a strong and inclusive MLBB community by promoting a 
+            healthy gaming environment, developing skilled players, 
+            supporting esports growth, and empowering leaders to nurture every gamer's full potential.</p>
+
+        <h2>Vision</h2>
+        <p>Monde aims to be a well-known and strong organization that leads the MLBB community worldwide.</p>
+
+        <h2>Mission</h2>
+        <p>To protect and promote a healthy MLBB community, helping individuals achieve 
+            their full potential as skilled gamers. Provide a mentally friendly and motivating environment where 
+            players learn, and leaders facilitate growth, nurturing every gamer.</p>
+
+        <a href="MONDE.html" class="btn">Back to Home</a>
+    </div>
+    <div class="waves"></div>
+</body>
+</html>

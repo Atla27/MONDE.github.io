@@ -43,3 +43,10 @@ document.querySelectorAll('.blog__read-more').forEach(link => {
     });
   });
 
+
+
+function toggleMenu() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("active");
+  }
+

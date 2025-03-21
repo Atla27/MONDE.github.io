@@ -3,8 +3,92 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+
+.sec0__content {
+    display: flex;
+    gap: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .sec0__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sec0__content {
+      gap: 10px;
+    }
+  }
+
+  img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .navBar__menuIcon {
+    display: none; /* Hide by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navBar__menuIcon {
+      display: block; /* Show on smaller screens */
+    }
+  
+    .navBar__menu {
+      display: none; /* Hide menu by default on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+    }
+  
+    .navBar__menu.active {
+      display: flex; /* Show menu when active */
+    }
+  }
+
+  .blog__container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items */
+  }
+
+  .blog__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+  }
+
+  button {
+    padding: 10px 20px; /* Make buttons easier to tap */
+    min-width: 100px; /* Ensure buttons are not too small */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 html {
     font-size: 62.5%;

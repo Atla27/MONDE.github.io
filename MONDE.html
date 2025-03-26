@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="monde.css"/>
     <script src="monde.js"></script>
     <title>Monde | Home</title>
@@ -145,13 +145,14 @@
         align-items: center;
         justify-content: center;
         gap: 30px; 
-        max-width: 80%;
+        max-width: 90%;
+        margin: 0 auto;
       }
     
      
       .sec0__text {
-        flex: 1;
-        max-width: 50%;
+        flex: 1 1 100%;
+        max-width: 100%;
         text-align: left; 
       }
     
@@ -175,8 +176,8 @@
     
      
       .sec0__image {
-        flex: 1;
-        max-width: 50%;
+        flex: 1 1 100%;
+        max-width: 100%;
       }
     
       .sec0__image img {
@@ -248,7 +249,8 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
       }
     
       .sec5__item {
@@ -287,8 +289,7 @@
   <h1 class="blog__title">Latest Blogs</h1>
   <div class="blog__container">
     <!-- Blog Card 1 -->
-    <a href="blog-post-1.html" class="blog__card-link">
-      <article class="blog__card" data-aos="fade-up">
+      <article class="blog__card" data-aos="fade-up" onclick="window.location.href='blog-post-1.html'">
         <div class="blog__image-container">
           <img src="images/blog1.jpg" alt="Hero Guides" class="blog__image" />
           <div class="blog__overlay">
@@ -300,15 +301,14 @@
           <p class="blog__text">Discover the most powerful heroes dominating the battlefield this season...</p>
           <div class="blog__meta">
             <span class="blog__date">March 15, 2025</span>
-            <span class="blog__author">By Gian</span>
+            <span class="blog__author">By gian</span>
           </div>
         </div>
       </article>
     </a>
 
     <!-- Blog Card 2 -->
-    <a href="blog-post-2.html" class="blog__card-link">
-      <article class="blog__card" data-aos="fade-up" data-aos-delay="200">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='blog-post-1.html'">
         <div class="blog__image-container">
           <img src="images/blog2.jpg" alt="Best Strategies for Ranked Matches" class="blog__image" />
           <div class="blog__overlay">
@@ -327,8 +327,7 @@
     </a>
 
     <!-- Blog Card 3 -->
-    <a href="blog-post-3.html" class="blog__card-link">
-      <article class="blog__card" data-aos="fade-up" data-aos-delay="400">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='blog-post-1.html'">
         <div class="blog__image-container">
           <img src="images/blog3.jpg" alt="Upcoming MLBB Events & Tournaments" class="blog__image" />
           <div class="blog__overlay">
@@ -347,8 +346,7 @@
     </a>
 
     <!-- Blog Card 4 -->
-    <a href="blog-post-4.html" class="blog__card-link">
-      <article class="blog__card" data-aos="fade-up" data-aos-delay="600">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="600" onclick="window.location.href='blog-post-1.html'">
         <div class="blog__image-container">
           <img src="images/blog4.jpg" alt="How to Build the Perfect Team Composition" class="blog__image" />
           <div class="blog__overlay">
@@ -367,8 +365,7 @@
     </a>
 
     <!-- Blog Card 5 -->
-    <a href="blog-post-5.html" class="blog__card-link">
-      <article class="blog__card" data-aos="fade-up" data-aos-delay="800">
+      <article class="blog__card" data-aos="fade-up" data-aos-delay="800" onclick="window.location.href='blog-post-1.html'">
         <div class="blog__image-container">
           <img src="images/blog5.jpg" alt="Top Tips for New Mobile Legends Players" class="blog__image" />
           <div class="blog__overlay">
@@ -389,6 +386,16 @@
 </section>
 
 <style>
+button, .blog__card {
+  min-width: 44px;
+  min-height: 44px; /* Recommended minimum touch target size */
+}
+
+/* Increase tap targets for mobile */
+.navBar__menu ul li a {
+  padding: 15px 10px;
+}
+
 .blog__card-link {
   text-decoration: none; 
   color: inherit; 
@@ -422,7 +429,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -556,7 +563,7 @@
         </div>
         <div class="sec2__aboutme2" data-aos="fade-up" data-aos-delay="1000">
           <p class="custom-paragraph">
-            Building the future of MLBB esports with a strong, skilled, and united community.
+            Building the future of MLBB esports with a strong, skilled, and
         </p>
         </div>
       </div>

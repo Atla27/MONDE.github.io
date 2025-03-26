@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Monde</title>
     <style>
-        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            color: black; /* Black text for contrast */
+            color: black; 
             text-align: center;
             margin: 0;
             padding: 0;
-            overflow: auto; /* Enable scrolling */
+            overflow: auto; 
         }
 
-        /* Container Styling */
         .container {
             max-width: 800px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            background: rgba(255, 255, 255, 0.8);
             padding: 30px;
             margin: 50px auto;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             text-align: left;
-            backdrop-filter: blur(10px); /* Adds a blur effect to blend with the background */
-            position: relative; /* Ensure it stays above the background */
-            z-index: 1; /* Ensure it stays above the background */
+            backdrop-filter: blur(10px); 
+            position: relative; 
+            z-index: 1; 
         }
 
         h1 {
             text-align: center;
-            color: #ff9900; /* Orange for emphasis */
+            color: #ff9900; 
             font-size: 36px;
         }
 
         h2 {
-            color: #ff6600; /* Darker orange for emphasis */
+            color: #ff6600; 
             margin-top: 20px;
             border-bottom: 2px solid #ff6600;
             padding-bottom: 5px;
@@ -45,10 +43,9 @@
         p {
             font-size: 18px;
             line-height: 1.6;
-            color: black; /* Black text */
+            color: black; 
         }
 
-        /* Button Styling */
         .btn {
             display: block;
             width: 200px;
@@ -56,7 +53,7 @@
             padding: 12px;
             font-size: 18px;
             color: white;
-            background: rgba(255, 102, 0, 0.8); /* Semi-transparent orange */
+            background: rgba(255, 102, 0, 0.8); 
             text-decoration: none;
             border-radius: 8px;
             transition: 0.3s;
@@ -64,17 +61,16 @@
         }
 
         .btn:hover {
-            background: rgba(255, 153, 0, 0.8); /* Semi-transparent yellow on hover */
+            background: rgba(255, 153, 0, 0.8); 
         }
 
-        /* Background Animation */
         .waves {
-            position: fixed; /* Fixed position to keep it in place */
+            position: fixed; 
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
-            z-index: -1; /* Send it to the background */
+            z-index: -1;
             background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
             animation: waveAnimation 6s infinite alternate ease-in-out, colorShift 12s infinite alternate ease-in-out;
         }

@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gameplay Strategies – Mobile Legends Blog</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
   <style>
-    /* Blog Page Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
     .blog-page {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 50px auto;
       padding: 20px;
-      background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
     }
 
-    .blog-page h1 {
+    .blog-page__title {
       font-size: 2.5rem;
-      color: #333;
+      color: #007BFF;
       margin-bottom: 20px;
       text-align: center;
     }
@@ -46,7 +49,7 @@
     }
 
     .blog-post p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.6;
       color: #555;
       margin-bottom: 20px;
@@ -69,10 +72,12 @@
 
     .back-link {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 30px;
       color: #007BFF;
       text-decoration: none;
       font-weight: bold;
+      text-align: center;
+      width: 100%;
     }
 
     .back-link:hover {
@@ -80,52 +85,55 @@
     }
 
     .waves {
-            position: fixed; 
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1; 
-            background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
-            animation: waveAnimation 6s infinite alternate ease-in-out, colorShift 12s infinite alternate ease-in-out;
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+    animation: waveAnimation 6s infinite alternate ease-in-out, colorShift 12s infinite alternate ease-in-out;
+}
 
-        @keyframes waveAnimation {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-20px);
-            }
-        }
+@keyframes waveAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
 
-        @keyframes colorShift {
-            0% {
-                background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
-            }
-            25% {
-                background: linear-gradient(45deg, rgba(0, 150, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
-            }
-            50% {
-                background: linear-gradient(45deg, rgba(255, 100, 0, 0.3), rgba(0, 255, 150, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 100, 255, 0.3));
-            }
-            75% {
-                background: linear-gradient(45deg, rgba(0, 255, 200, 0.3), rgba(255, 0, 100, 0.3), rgba(255, 200, 0, 0.3), rgba(0, 150, 255, 0.3));
-            }
-            100% {
-                background: linear-gradient(45deg, rgba(200, 0, 255, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
-            }
-        }
+@keyframes colorShift {
+    0% {
+        background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+    }
+    25% {
+        background: linear-gradient(45deg, rgba(0, 150, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(255, 0, 255, 0.3), rgba(0, 255, 255, 0.3));
+    }
+    50% {
+        background: linear-gradient(45deg, rgba(255, 100, 0, 0.3), rgba(0, 255, 150, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 100, 255, 0.3));
+    }
+    75% {
+        background: linear-gradient(45deg, rgba(0, 255, 200, 0.3), rgba(255, 0, 100, 0.3), rgba(255, 200, 0, 0.3), rgba(0, 150, 255, 0.3));
+    }
+    100% {
+        background: linear-gradient(45deg, rgba(200, 0, 255, 0.3), rgba(0, 255, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(0, 255, 127, 0.3));
+    }
+}
   </style>
 </head>
 <body>
   <div class="blog-page">
-    <h1>Mobile Legends Gameplay Strategies</h1>
+    <h1 class="blog-post__title">Mobile Legends Gameplay Strategies</h1>
 
-    
     <section class="blog-post">
-      <h2>Gameplay Strategies – Map Awareness, Rotations, and Team Coordination</h2>
-      <div class="date">By <span>Kenjie</span> | March 15, 2025</div>
+      <h2>Map Awareness, Rotations, and Team Coordination</h2>
+      <div class="date">
+        <span>By Kenjie</span>
+        <span>•</span>
+        <span>March 15, 2025</span>
+      </div>
 
       <img src="images/mlbb-strategies.jpg" alt="Mobile Legends Gameplay Strategies">
 
@@ -158,9 +166,11 @@
         Team coordination is essential for winning team fights and securing victories. Here are some tips to improve teamwork:
       </p>
       <ul>
-        <li><strong>Stick Together:</strong> In the late game, avoid splitting up. Stick with your team to prevent being picked off by the enemy.</li>
-        <li><strong>Focus on Team Fights:</strong> Coordinate with your team to initiate or counter-initiate team fights.</li>
-        <li><strong>Communicate:</strong> Use pings, quick chat, or voice communication to share information and strategies with your team.</li>
+        <li><strong>Phoveus:</strong> A versatile fighter with high sustain damage.</li>
+        <li><strong>Beatrix:</strong> A marksman with multiple weapon modes for different situations.</li>
+        <li><strong>Yve:</strong> A mage with incredible zoning and crowd control abilities.</li>
+        <li><strong>Mathilda:</strong> A suport with excellent initiation and crowd control.</li>
+        <li><strong>Fanny:</strong> An assassin with unmatched mobility and burst damage.</li>
       </ul>
     </section>
 
@@ -175,11 +185,11 @@
         The meta in Mobile Legends is constantly evolving, and 2025 is no exception. Here are the top 5 heroes dominating the battlefield this season:
       </p>
       <ol>
-        <li><strong>Phoveus:</strong> A versatile fighter with high sustain damage.</li>
+        <li><strong>Paquito:</strong> A versatile fighter with high burst damage and mobility.</li>
         <li><strong>Beatrix:</strong> A marksman with multiple weapon modes for different situations.</li>
         <li><strong>Yve:</strong> A mage with incredible zoning and crowd control abilities.</li>
-        <li><strong>Mathilda:</strong> A suport with excellent initiation and crowd control.</li>
-        <li><strong>Fanny:</strong> An assassin with unmatched mobility and burst damage.</li>
+        <li><strong>Khufra:</strong> A tank with excellent initiation and crowd control.</li>
+        <li><strong>Ling:</strong> An assassin with unmatched mobility and burst damage.</li>
       </ol>
     </section>
 
@@ -201,7 +211,7 @@
     </section>
 
     <!-- Back Link -->
-    <a href="MONDE.html" class="back-link">← Back to Blogs</a>
+    <a href="MONDE.html" class="back-link">Back to Blogs</a>
   </div>
   <div class="waves"></div>
 </body>

@@ -959,3 +959,96 @@ font-weight: bold;
 animation: shine 200s infinite alternate;
 }
 
+/* Base mobile styles (applies to all devices) */
+.sec0, .sec5, .blog, .sec2, .sec3, .sec4 {
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust section margins for mobile */
+  .sec0, .sec5 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  /* Card layouts */
+  .sec3__container, .blog__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .sec3__card, .blog__card {
+    width: 100%;
+  }
+  
+  /* Tablet styles (600px and up) */
+  @media (min-width: 600px) {
+    .sec3__card, .blog__card {
+      width: calc(50% - 15px);
+    }
+  }
+  
+  /* Desktop styles (992px and up) */
+  @media (min-width: 992px) {
+    .sec3__card, .blog__card {
+      width: calc(33.333% - 15px);
+    }
+    
+    .sec0__content, .sec5__content {
+      flex-direction: row;
+    }
+    
+    .sec0__text, .sec0__image, 
+    .sec5__item img, .sec5__text {
+      flex: 1;
+    }
+    
+    .sec5__item {
+      flex-direction: row;
+    }
+  }
+  
+  /* Very large screens */
+  @media (min-width: 1200px) {
+    .sec0__content, .sec5__content, 
+    .blog__container, .sec3__container {
+      max-width: 1200px;
+    }
+  }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .sec3__card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .sec5__item {
+      flex-direction: column;
+    }
+    
+    .sec5__item img {
+      width: 100%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) and (max-width: 768px) {
+    .sec3__card {
+      width: 48%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* Adjustments for tablets */
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    /* Full desktop layout */
+  }
